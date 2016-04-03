@@ -1,0 +1,62 @@
+hash: a0b4eade9cee7179fdfec93059f4e1df7c80f7403f1df29a1490f66dfa3707b1
+updated: 2016-04-03T08:41:52.816884026-07:00
+imports:
+- name: github.com/astaxie/beego
+  version: 88c5dfa6ead42e624c2e7d9e04eab6cb2d07412a
+- name: github.com/codegangsta/inject
+  version: 33e0aa1cb7c019ccc3fbe049a8262a6403d30504
+- name: github.com/gin-gonic/gin
+  version: 233291e4e2d016084f9e42e786e45dad8858ace4
+  subpackages:
+  - binding
+  - render
+- name: github.com/go-martini/martini
+  version: dafdd96c12087352f3cf407b8f2a058028edf715
+- name: github.com/golang/protobuf
+  version: 2402d76f3d41f928c7902a765dfc872356dd3aad
+  subpackages:
+  - proto
+- name: github.com/labstack/echo
+  version: d42a861a68eb5335ecbbaf230f0cf23b4e8d2a05
+  subpackages:
+  - '...'
+  - engine/standard
+  - engine
+- name: github.com/labstack/gommon
+  version: f4ba73f8bcf88df1524069c117f7878cf530ee4e
+  subpackages:
+  - log
+  - color
+- name: github.com/manucorporat/sse
+  version: ee05b128a739a0fb76c7ebd3ae4810c1de808d6d
+- name: github.com/mattn/go-colorable
+  version: 9cbef7c35391cca05f15f8181dc0b18bc9736dbb
+- name: github.com/mattn/go-isatty
+  version: 56b76bdf51f7708750eac80fa38b952bb9f32639
+- name: github.com/valyala/fasthttp
+  version: 3f0e1bb92f4e096b55f4b8eac1d97c2b8e85060b
+  subpackages:
+  - '...'
+- name: github.com/valyala/fasttemplate
+  version: 3b874956e03f1636d171bda64b130f9135f42cff
+- name: github.com/zenazn/goji
+  version: 1925ec6302925f4760d7a11cc17036f44ec98d5b
+  subpackages:
+  - '...'
+  - web
+  - bind
+  - graceful
+  - web/middleware
+  - graceful/listener
+  - web/mutil
+- name: golang.org/x/net
+  version: 3e8a7b0329d536af18e227bb21b6da4d1dbbe180
+  subpackages:
+  - context
+- name: golang.org/x/sys
+  version: a60af9cbbc6ab800af4f2be864a31f423a0ae1f2
+  subpackages:
+  - unix
+- name: gopkg.in/go-playground/validator.v8
+  version: c193cecd124b5cc722d7ee5538e945bdb3348435
+devImports: []
