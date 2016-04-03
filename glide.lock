@@ -1,8 +1,16 @@
 hash: a0b4eade9cee7179fdfec93059f4e1df7c80f7403f1df29a1490f66dfa3707b1
-updated: 2016-04-03T08:41:52.816884026-07:00
+updated: 2016-04-03T14:00:12.352615458-07:00
 imports:
 - name: github.com/astaxie/beego
   version: 88c5dfa6ead42e624c2e7d9e04eab6cb2d07412a
+  subpackages:
+  - context
+  - config
+  - grace
+  - logs
+  - session
+  - toolbox
+  - utils
 - name: github.com/codegangsta/inject
   version: 33e0aa1cb7c019ccc3fbe049a8262a6403d30504
 - name: github.com/gin-gonic/gin
@@ -16,10 +24,21 @@ imports:
   version: 2402d76f3d41f928c7902a765dfc872356dd3aad
   subpackages:
   - proto
+- name: github.com/klauspost/compress
+  version: 9d711f4445beb7f6488148ce04e3b4dc6e72242d
+  subpackages:
+  - flate
+  - gzip
+  - zlib
+- name: github.com/klauspost/cpuid
+  version: 09cded8978dc9e80714c4d85b0322337b0a1e5e0
+- name: github.com/klauspost/crc32
+  version: 19b0b332c9e4516a6370a0456e6182c3b5036720
 - name: github.com/labstack/echo
   version: d42a861a68eb5335ecbbaf230f0cf23b4e8d2a05
   subpackages:
   - '...'
+  - engine/fasthttp
   - engine/standard
   - engine
 - name: github.com/labstack/gommon
@@ -39,16 +58,16 @@ imports:
   - '...'
 - name: github.com/valyala/fasttemplate
   version: 3b874956e03f1636d171bda64b130f9135f42cff
+- name: github.com/vishr/web-framework-benchmark
+  version: 4a86c101a411453da4f4431a661af7b35d91e290
+  subpackages:
+  - common
+  - echo/common
 - name: github.com/zenazn/goji
   version: 1925ec6302925f4760d7a11cc17036f44ec98d5b
   subpackages:
   - '...'
   - web
-  - bind
-  - graceful
-  - web/middleware
-  - graceful/listener
-  - web/mutil
 - name: golang.org/x/net
   version: 3e8a7b0329d536af18e227bb21b6da4d1dbbe180
   subpackages:
