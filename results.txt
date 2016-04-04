@@ -1,0 +1,114 @@
+benchmarking beego...
+Running 20s test @ http://localhost:8080/teams/x-men/members/wolverine
+  2 threads and 20 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    36.01ms   66.55ms 708.41ms   87.05%
+    Req/Sec    12.98k     1.79k   17.90k    83.25%
+  516565 requests in 20.02s, 71.43MB read
+Requests/sec:  25804.16
+Transfer/sec:      3.57MB
+benchmarking with pipleline...
+Running 20s test @ http://localhost:8080
+  2 threads and 20 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    80.95ms   88.10ms 862.59ms   81.77%
+    Req/Sec    15.72k     2.18k   22.61k    74.50%
+  625490 requests in 20.02s, 86.49MB read
+Requests/sec:  31248.10
+Transfer/sec:      4.32MB
+stopping beego (6421)...
+benchmarking echo/standard...
+Running 20s test @ http://localhost:8080/teams/x-men/members/wolverine
+  2 threads and 20 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    27.12ms   61.47ms 686.26ms   90.08%
+    Req/Sec    12.86k     2.25k   18.83k    78.21%
+  501243 requests in 20.05s, 69.31MB read
+Requests/sec:  24995.36
+Transfer/sec:      3.46MB
+benchmarking with pipleline...
+Running 20s test @ http://localhost:8080
+  2 threads and 20 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    72.75ms   79.55ms 762.97ms   81.98%
+    Req/Sec    16.07k     2.29k   23.08k    76.50%
+  639690 requests in 20.01s, 88.46MB read
+Requests/sec:  31973.11
+Transfer/sec:      4.42MB
+stopping echo/standard (6503)...
+benchmarking echo/fasthttp...
+Running 20s test @ http://localhost:8080/teams/x-men/members/wolverine
+  2 threads and 20 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    57.19ms   94.61ms 725.58ms   84.83%
+    Req/Sec    18.49k     1.66k   23.16k    88.50%
+  735889 requests in 20.01s, 114.39MB read
+Requests/sec:  36768.28
+Transfer/sec:      5.72MB
+benchmarking with pipleline...
+Running 20s test @ http://localhost:8080
+  2 threads and 20 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    52.64ms   48.39ms 433.54ms   67.45%
+    Req/Sec   104.51k    10.84k  131.88k    86.50%
+  4160367 requests in 20.01s, 646.72MB read
+Requests/sec: 207901.61
+Transfer/sec:     32.32MB
+stopping echo/fasthttp (6621)...
+benchmarking go-gin...
+Running 20s test @ http://localhost:8080/teams/x-men/members/wolverine
+  2 threads and 20 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    24.38ms   47.47ms 482.77ms   87.50%
+    Req/Sec    12.94k     2.38k   19.65k    78.25%
+  514890 requests in 20.01s, 71.20MB read
+Requests/sec:  25734.86
+Transfer/sec:      3.56MB
+benchmarking with pipleline...
+Running 20s test @ http://localhost:8080
+  2 threads and 20 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    66.57ms   73.35ms 806.62ms   82.30%
+    Req/Sec    16.05k     2.77k   26.12k    73.25%
+  638821 requests in 20.02s, 88.34MB read
+Requests/sec:  31901.26
+Transfer/sec:      4.41MB
+stopping go-gin (6690)...
+benchmarking goji...
+Running 20s test @ http://localhost:8080/teams/x-men/members/wolverine
+  2 threads and 20 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    27.43ms   53.27ms 553.99ms   87.83%
+    Req/Sec    12.75k     2.10k   19.24k    80.25%
+  507788 requests in 20.01s, 70.22MB read
+Requests/sec:  25376.52
+Transfer/sec:      3.51MB
+benchmarking with pipleline...
+Running 20s test @ http://localhost:8080
+  2 threads and 20 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    61.53ms   72.75ms 780.14ms   83.57%
+    Req/Sec    15.89k     2.58k   25.27k    74.00%
+  632777 requests in 20.02s, 87.50MB read
+Requests/sec:  31603.75
+Transfer/sec:      4.37MB
+stopping goji (6770)...
+benchmarking martini...
+Running 20s test @ http://localhost:8080/teams/x-men/members/wolverine
+  2 threads and 20 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    31.59ms   53.98ms 527.96ms   85.54%
+    Req/Sec     7.87k     1.08k   13.16k    78.25%
+  313337 requests in 20.01s, 43.33MB read
+Requests/sec:  15659.94
+Transfer/sec:      2.17MB
+benchmarking with pipleline...
+Running 20s test @ http://localhost:8080
+  2 threads and 20 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    93.19ms   80.20ms 649.86ms   71.95%
+    Req/Sec     8.70k     1.38k   12.53k    69.25%
+  346315 requests in 20.00s, 47.89MB read
+Requests/sec:  17312.48
+Transfer/sec:      2.39MB
+stopping martini (6816)...
