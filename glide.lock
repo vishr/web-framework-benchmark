@@ -1,5 +1,5 @@
-hash: a0b4eade9cee7179fdfec93059f4e1df7c80f7403f1df29a1490f66dfa3707b1
-updated: 2016-04-03T14:00:12.352615458-07:00
+hash: 5a79972f40f236fb6a8574f0c3ef7c3582c4cb5a8039b88a79a38708227e4b65
+updated: 2016-04-03T18:15:33.837981656-07:00
 imports:
 - name: github.com/astaxie/beego
   version: 88c5dfa6ead42e624c2e7d9e04eab6cb2d07412a
@@ -59,7 +59,7 @@ imports:
 - name: github.com/valyala/fasttemplate
   version: 3b874956e03f1636d171bda64b130f9135f42cff
 - name: github.com/vishr/web-framework-benchmark
-  version: 4a86c101a411453da4f4431a661af7b35d91e290
+  version: 053d387e67191f1c7c885bb76b58b46ae6ae8f7f
   subpackages:
   - common
   - echo/common
@@ -78,4 +78,6 @@ imports:
   - unix
 - name: gopkg.in/go-playground/validator.v8
   version: c193cecd124b5cc722d7ee5538e945bdb3348435
+- name: gopkg.in/labstack/echo.v1
+  version: 18a78a34eb4481722eef1ac9034eada58e3cf909
 devImports: []

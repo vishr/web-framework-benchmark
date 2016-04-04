@@ -10,11 +10,10 @@ for f in ${frameworks[@]}; do
   ./server &
   pid=$!
   sleep 2
-  wrk -t2 -c20 -d20s http://localhost:8080/teams/x-men/members/batman
+  wrk -t2 -c20 -d20s http://localhost:8080/teams/x-men/members/wolverine
   echo "benchmarking with pipleline..."
-  wrk -t2 -c20 -d20s http://localhost:8080 -s pipeline.lua /teams/x-men/members/batman 64
+  wrk -t2 -c20 -d20s http://localhost:8080 -s pipeline.lua /teams/x-men/members/wolverine 64
   echo "stopping $f ($pid)..."
-  echo $pid, pid
   kill -9 $pid &> /dev/null
   sleep 2
   rm server
