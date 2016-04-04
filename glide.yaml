@@ -12,4 +12,3 @@ import:
   - '...'
 - package: github.com/gin-gonic/gin
 - package: github.com/astaxie/beego
-- package: gopkg.in/labstack/echo.v1

@@ -10,8 +10,8 @@ import (
 	"github.com/vishr/web-framework-benchmark/common"
 )
 
-// Test: Path param
-func pathParam(c *context.Context) {
+// Test: Dynamic Route
+func dynamicRoute(c *context.Context) {
 	c.WriteString(fmt.Sprintf("team: %s, user: %s", c.Input.Param(":id"), c.Input.Param(":user")))
 }
 
@@ -23,15 +23,15 @@ func main() {
 	for _, r := range common.DynamicRoutes {
 		switch r.Method {
 		case "GET":
-			app.Get(r.Path, pathParam)
+			app.Get(r.Path, dynamicRoute)
 		case "POST":
-			app.Post(r.Path, pathParam)
+			app.Post(r.Path, dynamicRoute)
 		case "PUT":
-			app.Put(r.Path, pathParam)
+			app.Put(r.Path, dynamicRoute)
 		case "PATCH":
-			app.Patch(r.Path, pathParam)
+			app.Patch(r.Path, dynamicRoute)
 		case "DELETE":
-			app.Delete(r.Path, pathParam)
+			app.Delete(r.Path, dynamicRoute)
 		default:
 			panic("method not supported")
 		}

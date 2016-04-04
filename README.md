@@ -16,7 +16,7 @@ cd $GOPATH/src/github.com/vishr/web-framework-benchmark
 ./bench.sh
 ```
 
-### Test 1: Path Param
+### Test 1: Dynamic Route 
 
 `./bench.sh`
 

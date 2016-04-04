@@ -12,8 +12,8 @@ import (
 	"github.com/zenazn/goji/web"
 )
 
-// Test 1: Path param
-func pathParam(c web.C, w http.ResponseWriter, r *http.Request) {
+// Test 1: Dynamic Route
+func dynamicRoute(c web.C, w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 	w.Header().Set(echo.ContentType, echo.TextPlainCharsetUTF8)
 	io.WriteString(w, fmt.Sprintf("team: %s, user: %s", c.URLParams["id"], c.URLParams["user"]))
@@ -25,15 +25,15 @@ func main() {
 	for _, r := range common.DynamicRoutes {
 		switch r.Method {
 		case "GET":
-			mux.Get(r.Path, pathParam)
+			mux.Get(r.Path, dynamicRoute)
 		case "POST":
-			mux.Post(r.Path, pathParam)
+			mux.Post(r.Path, dynamicRoute)
 		case "PUT":
-			mux.Put(r.Path, pathParam)
+			mux.Put(r.Path, dynamicRoute)
 		case "PATCH":
-			mux.Patch(r.Path, pathParam)
+			mux.Patch(r.Path, dynamicRoute)
 		case "DELETE":
-			mux.Delete(r.Path, pathParam)
+			mux.Delete(r.Path, dynamicRoute)
 		default:
 			panic("method not supported")
 		}
