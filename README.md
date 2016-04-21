@@ -4,6 +4,7 @@
 
 - `Go > 1.5`
 - [Glide](https://github.com/Masterminds/glide)
+- [wrk](https://github.com/wg/wrk)
 
 ## Installation
 
