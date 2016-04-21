@@ -15,7 +15,7 @@ import (
 // Test 1: Dynamic Route
 func dynamicRoute(c web.C, w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
-	w.Header().Set(echo.ContentType, echo.TextPlainCharsetUTF8)
+	w.Header().Set(echo.HeaderContentType, echo.MIMETextPlainCharsetUTF8)
 	io.WriteString(w, fmt.Sprintf("team: %s, user: %s", c.URLParams["id"], c.URLParams["user"]))
 }
 
