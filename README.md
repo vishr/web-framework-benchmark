@@ -2,23 +2,14 @@
 
 ## Requirement
 
-- `Go > 1.5`
-- [Glide](https://github.com/Masterminds/glide)
-- [wrk](https://github.com/wg/wrk)
+- `dep`
 
 ## Installation
 
-`go get github.com/vishr/web-framework-benchmark`
+- `go get github.com/vishr/web-framework-benchmark`
 
 ## Running Benchmark
 
 ```sh
-cd $GOPATH/src/github.com/vishr/web-framework-benchmark
-./bench.sh
+go test -bench=.
 ```
-
-### Test 1: Dynamic Route 
-
-`./bench.sh`
-
-More to come soon...
