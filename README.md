@@ -1,9 +1,5 @@
 # Web Framework Benchmark
 
-## Requirement
-
-- `dep`
-
 ## Installation
 
 - `go get github.com/vishr/web-framework-benchmark`
